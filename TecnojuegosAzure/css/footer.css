@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.company-info {
+    margin-top: 20px;
+}
+
+.company-info p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.iconos a{
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, .35);
+    transition: .3s ease;
+}
+
+.Facebook:hover {
+    background-color: #2980B9;
+}
+
+.Instagram:hover {
+    background-color: #AB09A6;
+}
+
+.company-info {
+    background-color: white;  /* Fondo blanco solo para el pie de página */
+    padding: 20px;  /* Espaciado adicional si lo necesitas */
+    text-align: center;
+    color: black;  
+    
+}
+
+.orale{
+    text-align: center;
+    padding: 25px;
+}

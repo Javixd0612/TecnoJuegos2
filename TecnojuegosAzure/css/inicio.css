@@ -1,0 +1,195 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo a {
+    color: #FF00FF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #00BFFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF00FF;
+}
+
+/* Barra de búsqueda */
+.search-bar input {
+    background-color: #333;
+    padding: 15px;
+}
+
+/* Sección Quiénes somos */
+.about-us {
+    text-align: center;
+    margin: 50px auto;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+.about-us h2 {
+    color: #FF00FF;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Sección Consolas */
+.consoles {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.console-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.console-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.console-card:hover {
+    transform: scale(1.05);
+}
+
+.console-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.console-info {
+    margin-top: 15px;
+    color: #ddd;
+}
+
+.console-info h4 {
+    font-size: 18px;
+    color: #00BFFF;
+    margin-bottom: 10px;
+}
+
+/* Sección Juegos */
+.games-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.game-img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .console-images {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .about-us {
+        padding: 30px 20px;
+    }
+
+    .about-us h2 {
+        font-size: 28px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .search-bar input {
+        width: 200px;
+    }
+
+    .game-img {
+        max-width: 220px;
+    }
+
+    .console-card {
+        width: 80%;
+    }
+}
+
